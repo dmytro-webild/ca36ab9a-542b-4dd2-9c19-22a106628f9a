@@ -105,6 +105,9 @@ export default function PrivacyPolicyPage() {
               ]
             }
           ]}
+          titleClassName="text-foreground"
+          headingClassName="text-foreground"
+          contentClassName="text-foreground"
         />
       </div>
 
@@ -147,6 +150,10 @@ export default function PrivacyPolicyPage() {
           ]}
           copyrightText="© 2025 WhitePop Pro. All rights reserved. | Dentist Approved | Made with 💚 for your smile."
           ariaLabel="WhitePop Pro footer"
+          logoTextClassName="text-foreground"
+          columnTitleClassName="text-foreground"
+          columnItemClassName="text-foreground"
+          copyrightTextClassName="text-foreground"
         />
       </div>
     </ThemeProvider>

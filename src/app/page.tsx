@@ -64,6 +64,9 @@ export default function LandingPage() {
           containerClassName="w-full mx-auto"
           mediaWrapperClassName="w-full h-auto max-w-4xl mx-auto"
           imageClassName="w-full h-auto object-cover"
+          logoTextClassName="text-foreground"
+          descriptionClassName="text-foreground"
+          buttonTextClassName="text-foreground"
         />
       </div>
 
@@ -92,6 +95,10 @@ export default function LandingPage() {
           containerClassName="w-full mx-auto px-4 sm:px-6 lg:px-8"
           cardClassName="w-full h-auto"
           gridClassName="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
+          metricTitleClassName="text-foreground"
+          valueClassName="text-foreground"
+          textBoxTitleClassName="text-foreground"
+          textBoxDescriptionClassName="text-foreground"
         />
       </div>
 
@@ -135,6 +142,11 @@ export default function LandingPage() {
           containerClassName="w-full mx-auto px-4 sm:px-6 lg:px-8"
           mediaWrapperClassName="w-full h-auto max-w-lg mx-auto"
           mediaCardClassName="w-full h-auto"
+          textBoxTitleClassName="text-foreground"
+          textBoxDescriptionClassName="text-foreground"
+          featureTitleClassName="text-foreground"
+          featureDescriptionClassName="text-foreground"
+          listItemClassName="text-foreground"
         />
       </div>
 
@@ -153,6 +165,10 @@ export default function LandingPage() {
           ariaLabel="WhitePop Pro benefits section"
           mediaWrapperClassName="w-full h-auto max-w-lg mx-auto"
           mediaClassName="w-full h-auto object-cover"
+          titleClassName="text-foreground"
+          descriptionClassName="text-foreground"
+          tagClassName="text-foreground"
+          buttonTextClassName="text-foreground"
         />
       </div>
 
@@ -184,6 +200,13 @@ export default function LandingPage() {
           cardClassName="w-full h-auto"
           cardAvatarClassName="w-10 h-10 sm:w-12 sm:h-12"
           carouselClassName="w-full"
+          textBoxTitleClassName="text-foreground"
+          textBoxDescriptionClassName="text-foreground"
+          cardTitleClassName="text-foreground"
+          cardQuoteClassName="text-foreground"
+          cardAuthorClassName="text-foreground"
+          cardNameClassName="text-foreground"
+          cardDateClassName="text-foreground"
         />
       </div>
 
@@ -221,6 +244,12 @@ export default function LandingPage() {
           cardClassName="w-full h-auto"
           planImageWrapperClassName="w-full h-auto max-w-xs mx-auto"
           planImageClassName="w-full h-auto object-cover"
+          textBoxTitleClassName="text-foreground"
+          textBoxDescriptionClassName="text-foreground"
+          planTitleClassName="text-foreground"
+          planPriceClassName="text-foreground"
+          planButtonTextClassName="text-foreground"
+          featureTextClassName="text-foreground"
         />
       </div>
 
@@ -258,6 +287,10 @@ export default function LandingPage() {
           mediaWrapperClassName="w-full h-auto max-w-sm mx-auto"
           mediaClassName="w-full h-auto object-cover"
           containerClassName="w-full mx-auto px-4 sm:px-6 lg:px-8"
+          textBoxTitleClassName="text-foreground"
+          textBoxDescriptionClassName="text-foreground"
+          accordionTitleClassName="text-foreground"
+          accordionContentClassName="text-foreground"
         />
       </div>
 
@@ -301,6 +334,10 @@ export default function LandingPage() {
           copyrightText="© 2025 WhitePop Pro. All rights reserved. | Dentist Approved | Made with 💚 for your smile."
           ariaLabel="WhitePop Pro footer"
           containerClassName="w-full mx-auto px-4 sm:px-6 lg:px-8"
+          logoTextClassName="text-foreground"
+          columnTitleClassName="text-foreground"
+          columnItemClassName="text-foreground"
+          copyrightTextClassName="text-foreground"
         />
       </div>
     </ThemeProvider>
