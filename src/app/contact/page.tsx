@@ -79,6 +79,11 @@ export default function ContactPage() {
           background={{ variant: "plain" }}
           useInvertedBackground={false}
           ariaLabel="Contact us section"
+          titleClassName="text-foreground"
+          descriptionClassName="text-foreground"
+          inputClassName="text-foreground"
+          buttonTextClassName="text-foreground"
+          termsClassName="text-foreground"
         />
       </div>
 
@@ -135,6 +140,10 @@ export default function ContactPage() {
           ]}
           copyrightText="© 2025 WhitePop Pro. All rights reserved. | Dentist Approved | Made with 💚 for your smile."
           ariaLabel="WhitePop Pro footer"
+          logoTextClassName="text-foreground"
+          columnTitleClassName="text-foreground"
+          columnItemClassName="text-foreground"
+          copyrightTextClassName="text-foreground"
         />
       </div>
     </ThemeProvider>
