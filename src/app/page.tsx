@@ -64,7 +64,7 @@ export default function LandingPage() {
           containerClassName="w-full mx-auto"
           mediaWrapperClassName="w-full h-auto max-w-4xl mx-auto"
           imageClassName="w-full h-auto object-cover"
-          logoClassName="text-foreground"
+          logoClassName="text-foreground text-sm sm:text-base lg:text-lg"
           descriptionClassName="text-foreground"
           buttonTextClassName="text-foreground"
         />
