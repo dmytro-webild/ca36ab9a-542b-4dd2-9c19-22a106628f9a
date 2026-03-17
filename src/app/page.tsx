@@ -109,7 +109,7 @@ export default function LandingPage() {
           features={[
             {
               id: "step-1",              title: "Apply",              description: "Gently apply the whitening strip to your upper and lower teeth. The comfortable fit stays secure throughout treatment.",              media: {
-                imageSrc: "http://img.b2bpic.net/free-photo/portrait-young-man-removing-eye-patches-from-his-face_23-2149259933.jpg?w=600&h=600&q=80",                imageAlt: "Step 1 - Applying WhitePop Pro whitening strips"
+                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3B3BkvuCC9TO7wRZkmeE89Hqnmm/uploaded-1773714333203-8bk7j7qk.png",                imageAlt: "Step 1 - Applying WhitePop Pro whitening strips"
               },
               items: [
                 { icon: Zap, text: "30-second application" }
