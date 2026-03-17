@@ -47,7 +47,7 @@ export default function LandingPage() {
           logoText="WhitePop Pro"
           description="Professional-grade teeth whitening in 30 minutes. Enamel-safe, peroxide-free formula with nano hydroxyapatite technology."
           buttons={[
-            { text: "Shop Now", href: "#pricing" },
+            { text: "Get My Brighter Smile", href: "#pricing" },
             { text: "See Results", href: "#before-after" }
           ]}
           slides={[
