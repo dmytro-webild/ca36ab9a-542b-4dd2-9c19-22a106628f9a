@@ -12,7 +12,7 @@ import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCa
 import PricingCardNine from '@/components/sections/pricing/PricingCardNine';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
-import { CheckCircle, Clock, Shield, Smile, Sparkles, TrendingUp, Zap } from 'lucide-react';
+import { CheckCircle, Clock, Shield, Smile, Sparkles, TrendingUp, Zap, Droplet, Leaf, Award, Zap as ZapIcon, Heart, Lock } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -33,9 +33,10 @@ export default function LandingPage() {
           brandName="WhitePop"
           navItems={[
             { name: "How It Works", id: "how-it-works" },
+            { name: "Before & After", id: "before-after" },
             { name: "Benefits", id: "benefits" },
-            { name: "Testimonials", id: "testimonials" },
-            { name: "Pricing", id: "pricing" }
+            { name: "Reviews", id: "testimonials" },
+            { name: "FAQ", id: "faq" }
           ]}
           button={{ text: "Shop Now", href: "#pricing" }}
         />
@@ -44,17 +45,17 @@ export default function LandingPage() {
       <div id="hero" data-section="hero">
         <HeroCarouselLogo
           logoText="WhitePop Pro"
-          description="Enamel-safe whitening powered by nano hydroxyapatite technology"
+          description="Professional-grade teeth whitening in 30 minutes. Enamel-safe, peroxide-free formula with nano hydroxyapatite technology."
           buttons={[
             { text: "Shop Now", href: "#pricing" },
-            { text: "Learn More", href: "#solution" }
+            { text: "See Results", href: "#before-after" }
           ]}
           slides={[
             {
-              imageSrc: "http://img.b2bpic.net/free-photo/happy-beautiful-girl-is-happy-smiling-laughing-look-stright-expressive-facial-expressions-cosmet_1258-136364.jpg",              imageAlt: "WhitePop Pro Whitening Strips Premium Product"
+              imageSrc: "http://img.b2bpic.net/free-photo/happy-beautiful-girl-is-happy-smiling-laughing-look-stright-expressive-facial-expressions-cosmet_1258-136364.jpg",              imageAlt: "Woman smiling brightly with WhitePop Pro results"
             },
             {
-              imageSrc: "http://img.b2bpic.net/free-photo/mixed-race-black-blonde-model-with-curly-hair-closeup-mouth-painted-with-bright-blue-lipstick-smiling-watching-camera_633478-803.jpg",              imageAlt: "Bright White Smile with WhitePop Pro Results"
+              imageSrc: "http://img.b2bpic.net/free-photo/mixed-race-black-blonde-model-with-curly-hair-closeup-mouth-painted-with-bright-blue-lipstick-smiling-watching-camera_633478-803.jpg",              imageAlt: "Radiant smile showcasing WhitePop Pro whitening strips"
             }
           ]}
           autoplayDelay={4000}
@@ -63,46 +64,38 @@ export default function LandingPage() {
         />
       </div>
 
-      <div id="problem" data-section="problem">
-        <TextSplitAbout
-          title="Coffee, Tea, and Wine Are Staining Your Smile"
-          description={[
-            "Daily habits like drinking coffee, tea, or wine can gradually stain your teeth and cause yellowing. Over time, surface stains reduce your confidence and make you self-conscious about smiling in photos or social situations.",            "Professional whitening treatments can cost hundreds of dollars, but there's a better way. WhitePop Pro offers professional-grade results at a fraction of the cost."
-          ]}
-          useInvertedBackground={false}
-          ariaLabel="Problem section - teeth staining from daily beverages"
-        />
-      </div>
-
-      <div id="solution" data-section="solution">
-        <ProductCardTwo
-          title="Introducing WhitePop Pro Whitening Strips"
-          description="Our advanced whitening strips use nano hydroxyapatite (nHAP) technology to safely remove stains and brighten your smile without harsh peroxide. Developed with dental professionals, WhitePop Pro works in just 30 minutes per day—perfect for your busy lifestyle."
-          gridVariant="two-columns-alternating-heights"
-          animationType="slide-up"
-          products={[
+      <div id="before-after" data-section="before-after">
+        <MetricCardThree
+          title="Visible Results in Just 7 Days"
+          description="Our customers see dramatic whitening results with consistent use. Here's what real WhitePop Pro users experienced:"
+          metrics={[
             {
-              id: "strips-product",              brand: "WhitePop",              name: "Pro Whitening Strips",              price: "$29.99",              rating: 5,
-              reviewCount: "2,847",              imageSrc: "http://img.b2bpic.net/free-photo/top-view-medical-mask-pills-thermometer-pink-green-background_1182-1080.jpg?_wi=1",              imageAlt: "WhitePop Pro Whitening Strips Box"
+              id: "result-1",              icon: Sparkles,
+              title: "Shade Improvement",              value: "+8 Shades"
             },
             {
-              id: "nano-tech",              brand: "Technology",              name: "Nano Hydroxyapatite Formula",              price: "Enamel-Safe",              rating: 5,
-              reviewCount: "Dentist Approved",              imageSrc: "http://img.b2bpic.net/free-photo/top-view-medical-mask-pills-thermometer-pink-green-background_1182-1080.jpg?_wi=2",              imageAlt: "Nano Hydroxyapatite Technology Icon"
+              id: "result-2",              icon: TrendingUp,
+              title: "Timeline",              value: "7 Days"
+            },
+            {
+              id: "result-3",              icon: CheckCircle,
+              title: "Enamel Safe",              value: "100%"
             }
           ]}
+          animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground={true}
-          ariaLabel="WhitePop Pro product introduction section"
+          ariaLabel="WhitePop Pro results metrics section"
         />
       </div>
 
       <div id="how-it-works" data-section="how-it-works">
         <FeatureCardTen
           title="How WhitePop Pro Works"
-          description="Three simple steps to a brighter smile. Our proven process takes just 30 minutes daily."
+          description="Three simple steps to transform your smile. Takes just 30 minutes daily."
           features={[
             {
-              id: "step-1",              title: "Apply",              description: "Gently apply the whitening strip to your upper and lower teeth. The comfortable fit stays secure throughout your treatment.",              media: {
+              id: "step-1",              title: "Apply",              description: "Gently apply the whitening strip to your upper and lower teeth. The comfortable fit stays secure throughout treatment.",              media: {
                 imageSrc: "http://img.b2bpic.net/free-photo/portrait-young-man-removing-eye-patches-from-his-face_23-2149259933.jpg",                imageAlt: "Step 1 - Applying WhitePop Pro whitening strips"
               },
               items: [
@@ -111,7 +104,7 @@ export default function LandingPage() {
               reverse: false
             },
             {
-              id: "step-2",              title: "Wait 30 Minutes",              description: "Let the nano hydroxyapatite formula work its magic. The advanced formula safely penetrates surface stains without sensitivity.",              media: {
+              id: "step-2",              title: "Wait 30 Minutes",              description: "Let the nano hydroxyapatite formula work its magic. Advanced formula safely penetrates stains without sensitivity.",              media: {
                 imageSrc: "http://img.b2bpic.net/free-photo/front-view-woman-with-pink-mask_23-2148627165.jpg",                imageAlt: "Step 2 - Waiting 30 minutes for treatment"
               },
               items: [
@@ -120,7 +113,7 @@ export default function LandingPage() {
               reverse: true
             },
             {
-              id: "step-3",              title: "Reveal Your Brighter Smile",              description: "Remove the strip and see immediate results. With consistent use, you'll notice dramatic whitening within 7 days.",              media: {
+              id: "step-3",              title: "Reveal Your Brighter Smile",              description: "Remove the strip and enjoy immediate results. With consistent use, see dramatic whitening within 7 days.",              media: {
                 imageSrc: "http://img.b2bpic.net/free-photo/woman-studio-taking-self-photo_23-2148846675.jpg",                imageAlt: "Step 3 - Bright white smile results"
               },
               items: [
@@ -136,42 +129,17 @@ export default function LandingPage() {
         />
       </div>
 
-      <div id="before-after" data-section="before-after">
-        <MetricCardThree
-          title="See Real Results in 7 Days"
-          description="Thousands of customers have transformed their smiles with WhitePop Pro. Browse customer testimonials and before-and-after photos."
-          metrics={[
-            {
-              id: "result-1",              icon: Sparkles,
-              title: "Before & After",              value: "7 Days"
-            },
-            {
-              id: "result-2",              icon: TrendingUp,
-              title: "Whitening Power",              value: "+8 Shades"
-            },
-            {
-              id: "result-3",              icon: CheckCircle,
-              title: "Enamel Safe",              value: "100%"
-            }
-          ]}
-          animationType="slide-up"
-          textboxLayout="default"
-          useInvertedBackground={true}
-          ariaLabel="WhitePop Pro results metrics section"
-        />
-      </div>
-
       <div id="benefits" data-section="benefits">
         <MediaAbout
           title="Why Choose WhitePop Pro?"
-          description="Our whitening strips are designed with your smile in mind. Peroxide-free formula, enamel-friendly technology, and results you can see. Plus, backed by dentists and trusted by over 50,000 satisfied customers."
+          description="Backed by dentists and trusted by over 50,000 satisfied customers. Our peroxide-free formula with nano hydroxyapatite strengthens your enamel while whitening. See results without the sensitivity."
           tag="Key Benefits"
           tagIcon={Shield}
           buttons={[
             { text: "Shop Now", href: "#pricing" }
           ]}
           imageSrc="http://img.b2bpic.net/free-photo/young-beautiful-couple-casual-clothes-man-woman-happy-positive-smiling-cheerfully-standing-white-wall_141793-101769.jpg"
-          imageAlt="WhitePop Pro before and after teeth whitening results"
+          imageAlt="WhitePop Pro benefits - happy couple with bright smiles"
           useInvertedBackground={false}
           ariaLabel="WhitePop Pro benefits section"
         />
@@ -196,9 +164,6 @@ export default function LandingPage() {
             },
             {
               id: "5",              name: "Jessica Martinez",              date: "10 days ago",              title: "Worth Every Penny",              quote: "I've tried other whitening products before, but WhitePop Pro is by far the best. The results are incredible and they last!",              tag: "Verified Purchase",              avatarSrc: "http://img.b2bpic.net/free-photo/confident-determined-young-girl-student-cross-arms-chest-power-pose-smiling-looking-self-assured-standing-white-background-near-your-logo-place-banner_176420-44471.jpg",              avatarAlt: "Jessica Martinez"
-            },
-            {
-              id: "6",              name: "James Thompson",              date: "5 days ago",              title: "Best Purchase I've Made",              quote: "Seriously impressed with WhitePop Pro. My smile has never looked better, and my friends have been asking where I got them done.",              tag: "Verified Purchase",              avatarSrc: "http://img.b2bpic.net/free-photo/portrait-young-happy-man-smiling-against-white-space_58466-12722.jpg",              avatarAlt: "James Thompson"
             }
           ]}
           textboxLayout="default"
