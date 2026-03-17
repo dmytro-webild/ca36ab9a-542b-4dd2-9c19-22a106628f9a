@@ -8,7 +8,7 @@ import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
 import PricingCardNine from '@/components/sections/pricing/PricingCardNine';
-import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
+import FaqBase from '@/components/sections/faq/FaqBase';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import { CheckCircle, Clock, Shield, Smile, Sparkles, TrendingUp, Zap, Heart, Award } from 'lucide-react';
@@ -228,7 +228,7 @@ export default function WhitePopProPage() {
       </div>
 
       <div id="faq" data-section="faq">
-        <FaqSplitMedia
+        <FaqBase
           title="Frequently Asked Questions"
           description="Everything you need to know about WhitePop Pro whitening strips."
           faqs={[
@@ -251,9 +251,6 @@ export default function WhitePopProPage() {
               id: "6",              title: "What's your money-back guarantee?",              content: "We're so confident you'll love WhitePop Pro that we offer a 30-day money-back guarantee. If you're not satisfied for any reason, simply contact customer service within 30 days of purchase for a full refund—no questions asked!"
             }
           ]}
-          imageSrc="http://img.b2bpic.net/free-vector/coupon-sale-label-set_23-2147941071.jpg"
-          imageAlt="30-day money-back guarantee seal"
-          mediaAnimation="slide-up"
           textboxLayout="default"
           faqsAnimation="blur-reveal"
           useInvertedBackground={true}
