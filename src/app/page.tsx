@@ -10,7 +10,7 @@ import MetricCardThree from '@/components/sections/metrics/MetricCardThree';
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
 import PricingCardNine from '@/components/sections/pricing/PricingCardNine';
-import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
+import FaqBase from '@/components/sections/faq/FaqBase';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import { CheckCircle, Clock, Shield, Smile, Sparkles, TrendingUp, Zap, Droplet, Leaf, Award, Zap as ZapIcon, Heart, Lock } from 'lucide-react';
 
@@ -254,7 +254,7 @@ export default function LandingPage() {
       </div>
 
       <div id="faq" data-section="faq">
-        <FaqSplitMedia
+        <FaqBase
           title="Frequently Asked Questions"
           description="Everything you need to know about WhitePop Pro whitening strips."
           faqs={[
@@ -277,15 +277,10 @@ export default function LandingPage() {
               id: "6",              title: "What's your money-back guarantee?",              content: "We're so confident you'll love WhitePop Pro that we offer a 30-day money-back guarantee. If you're not satisfied for any reason, simply contact customer service within 30 days of purchase for a full refund—no questions asked!"
             }
           ]}
-          imageSrc="http://img.b2bpic.net/free-vector/coupon-sale-label-set_23-2147941071.jpg?w=400&h=400&q=80"
-          imageAlt="30-day money-back guarantee seal"
-          mediaAnimation="slide-up"
           textboxLayout="default"
           faqsAnimation="blur-reveal"
           useInvertedBackground={true}
           ariaLabel="Frequently asked questions about WhitePop Pro"
-          mediaWrapperClassName="w-full h-auto max-w-sm mx-auto"
-          mediaClassName="w-full h-auto object-cover"
           containerClassName="w-full mx-auto px-4 sm:px-6 lg:px-8"
           textBoxTitleClassName="text-foreground"
           textBoxDescriptionClassName="text-foreground"
