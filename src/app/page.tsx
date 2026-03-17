@@ -135,7 +135,7 @@ export default function LandingPage() {
           containerClassName="w-full mx-auto px-4 sm:px-6 lg:px-8"
           mediaWrapperClassName="w-full h-auto max-w-lg mx-auto"
           mediaCardClassName="w-full h-auto"
-          mediaClassName="w-full h-auto object-cover"
+          mediaCardClassName="w-full h-auto"
         />
       </div>
 
@@ -223,6 +223,7 @@ export default function LandingPage() {
           gridClassName="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
           planImageWrapperClassName="w-full h-auto max-w-xs mx-auto"
           planImageClassName="w-full h-auto object-cover"
+          className="w-full mx-auto px-4 sm:px-6 lg:px-8"
         />
       </div>
 
