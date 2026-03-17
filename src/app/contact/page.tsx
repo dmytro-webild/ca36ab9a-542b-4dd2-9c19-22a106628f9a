@@ -76,6 +76,7 @@ export default function ContactPage() {
           buttonText="Send Message"
           termsText="By submitting this form, you agree to our Terms and Conditions and Privacy Policy."
           onSubmit={handleContactSubmit}
+          background={{ variant: "plain" }}
           useInvertedBackground={false}
           ariaLabel="Contact us section"
         />
