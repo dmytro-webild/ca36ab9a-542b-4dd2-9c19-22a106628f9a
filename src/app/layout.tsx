@@ -6,6 +6,7 @@ import { ServiceWrapper } from "@/components/ServiceWrapper";
 import Tag from "@/tag/Tag";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Public_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 
 
@@ -14,8 +15,10 @@ export const metadata: Metadata = {
   description: 'Get professional teeth whitening in 30 minutes with WhitePop Pro strips. Peroxide-free, enamel-safe formula. See results in 7 days. 30-day money-back guarantee.',
 };
 
-const publicSans = Public_Sans({
-  variable: "--font-public-sans",  subsets: ["latin"],
+
+const poppins = Poppins({
+  variable: "--font-poppins",  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 const inter = Inter({
   variable: "--font-inter",  subsets: ["latin"],
@@ -29,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${publicSans.variable} ${inter.variable} antialiased`}>
+        <body className={`${poppins.variable} ${inter.variable} antialiased`}>
           <Tag />
           {children}
           <script
