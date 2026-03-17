@@ -3,10 +3,11 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
-import MediaAbout from '@/components/sections/about/MediaAbout';
+import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import MetricCardThree from '@/components/sections/metrics/MetricCardThree';
+import MediaAbout from '@/components/sections/about/MediaAbout';
 import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
 import PricingCardNine from '@/components/sections/pricing/PricingCardNine';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
@@ -63,11 +64,11 @@ export default function LandingPage() {
       </div>
 
       <div id="problem" data-section="problem">
-        <MediaAbout
+        <TextSplitAbout
           title="Coffee, Tea, and Wine Are Staining Your Smile"
-          description="Daily habits like drinking coffee, tea, or wine can gradually stain your teeth and cause yellowing. Over time, surface stains reduce your confidence and make you self-conscious about smiling in photos or social situations. Professional whitening treatments can cost hundreds of dollars, but there's a better way."
-          imageSrc="http://img.b2bpic.net/free-photo/smiling-teenage-girl-drinking-coffee-from-cup_23-2147906516.jpg"
-          imageAlt="Coffee staining teeth and causing discoloration"
+          description={[
+            "Daily habits like drinking coffee, tea, or wine can gradually stain your teeth and cause yellowing. Over time, surface stains reduce your confidence and make you self-conscious about smiling in photos or social situations.",            "Professional whitening treatments can cost hundreds of dollars, but there's a better way. WhitePop Pro offers professional-grade results at a fraction of the cost."
+          ]}
           useInvertedBackground={false}
           ariaLabel="Problem section - teeth staining from daily beverages"
         />
