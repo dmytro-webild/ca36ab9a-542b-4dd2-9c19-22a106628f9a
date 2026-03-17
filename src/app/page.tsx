@@ -82,11 +82,11 @@ export default function LandingPage() {
           products={[
             {
               id: "strips-product",              brand: "WhitePop",              name: "Pro Whitening Strips",              price: "$29.99",              rating: 5,
-              reviewCount: "2,847",              imageSrc: "http://img.b2bpic.net/free-photo/top-view-medical-mask-pills-thermometer-pink-green-background_1182-1080.jpg",              imageAlt: "WhitePop Pro Whitening Strips Box"
+              reviewCount: "2,847",              imageSrc: "http://img.b2bpic.net/free-photo/top-view-medical-mask-pills-thermometer-pink-green-background_1182-1080.jpg?_wi=1",              imageAlt: "WhitePop Pro Whitening Strips Box"
             },
             {
               id: "nano-tech",              brand: "Technology",              name: "Nano Hydroxyapatite Formula",              price: "Enamel-Safe",              rating: 5,
-              reviewCount: "Dentist Approved",              imageSrc: "http://img.b2bpic.net/free-photo/top-view-medical-mask-pills-thermometer-pink-green-background_1182-1080.jpg",              imageAlt: "Nano Hydroxyapatite Technology Icon"
+              reviewCount: "Dentist Approved",              imageSrc: "http://img.b2bpic.net/free-photo/top-view-medical-mask-pills-thermometer-pink-green-background_1182-1080.jpg?_wi=2",              imageAlt: "Nano Hydroxyapatite Technology Icon"
             }
           ]}
           textboxLayout="default"
@@ -222,14 +222,14 @@ export default function LandingPage() {
                 "28 whitening strips (14-day supply)",                "Nano hydroxyapatite formula",                "Enamel-safe technology",                "30-day money-back guarantee",                "Free shipping included",                "Save $9.99"
               ],
               button: { text: "Buy Now", href: "#" },
-              imageSrc: "http://img.b2bpic.net/free-photo/top-view-medical-mask-pills-thermometer-pink-green-background_1182-1080.jpg",              imageAlt: "WhitePop Pro 2 Pack Bundle"
+              imageSrc: "http://img.b2bpic.net/free-photo/top-view-medical-mask-pills-thermometer-pink-green-background_1182-1080.jpg?_wi=3",              imageAlt: "WhitePop Pro 2 Pack Bundle"
             },
             {
               id: "bundle-3",              title: "3 Pack Bundle",              price: "$69.99",              period: "Best Value",              features: [
                 "42 whitening strips (21-day supply)",                "Nano hydroxyapatite formula",                "Enamel-safe technology",                "30-day money-back guarantee",                "Free shipping included",                "Save $19.98 (33% off)",                "Results guaranteed or your money back"
               ],
               button: { text: "Buy Now", href: "#" },
-              imageSrc: "http://img.b2bpic.net/free-photo/top-view-medical-mask-pills-thermometer-pink-green-background_1182-1080.jpg",              imageAlt: "WhitePop Pro 3 Pack Bundle - Best Value"
+              imageSrc: "http://img.b2bpic.net/free-photo/top-view-medical-mask-pills-thermometer-pink-green-background_1182-1080.jpg?_wi=4",              imageAlt: "WhitePop Pro 3 Pack Bundle - Best Value"
             }
           ]}
           textboxLayout="default"
